@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+* body {
+  background: #1E252B;
+  font-family: "Poppins", sans-serif;
+}
+* body a {
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 1154px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+:root {
+  --color-text: rgba(255, 255, 255, 0.55);
+  --accent: #FF6E30;
+}
+
+.header {
+  padding-top: 34px;
+}
+
+.header__bg {
+  position: absolute;
+  right: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 42px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-list__link {
+  position: relative;
+}
+.nav-list__link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: 0.3s;
+  background-color: white;
+}
+.nav-list__link:hover::before {
+  position: absolute;
+  width: 100%;
+  transition: 0.3s;
+  transform: scaleX(1);
+}
+
+.nav__personal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 41px;
+}
+
+.nav_button {
+  width: 118px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #FDF5FF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+.nav_button:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}/*# sourceMappingURL=main.css.map */
