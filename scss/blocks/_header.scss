@@ -1,10 +1,8 @@
 .header{
     padding-top: 34px;
-    
 }
 
 .header-content {
-    
     padding-top: 115px;
 }
 .header__text {
@@ -12,7 +10,7 @@
 }
 .header__title {
     margin-bottom: 30px;
-    color: rgba(255, 255, 255, 0.90);
+    color: var(--color-title);
     font-size: 50px;
     line-height: 140%; /* 70px */
  span {
@@ -23,11 +21,9 @@
 .header__desc {
     max-width: 487px;
     margin-bottom: 60px;
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--color-text);
     font-size: 18px;
-    font-weight: 400;
     line-height: 30px; /* 166.667% */
-
 }
 .search {
     display: flex;
@@ -42,11 +38,10 @@
     border: 1.5px solid rgba(255, 255, 255, 0.10);
     background: #283036;
 }
-.search__input {   
+.search__input {
     flex-grow: 1;
     color: rgba(255, 255, 255, 0.38);
     font-size: 14px;
-    font-weight: 400;
 }
 
 .search__button {
@@ -54,8 +49,8 @@
     height: 48px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: #FF6E30;
-    color: #ffff;
+    background: var(--button-bg);
+    color: var(--button-color);
 }
 .header__social{
     display: flex;
