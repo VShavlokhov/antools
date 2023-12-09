@@ -1,15 +1,17 @@
 .card {
     max-width: 358px;
+    height: 294px;
     display: block;
     padding: 28px 28px 0 28px;
     border-radius: 15px;
     background: var(--card-bg);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     &:hover{
+        transition: 0.3s ease-in-out;
+        transform: translateY(-20px);
         border-radius: 15px;
-        border: 2px solid var(--card-hover);
         background: var(--card-hover);
         backdrop-filter: blur(25px);
-        margin-top: -20px;
         background-image: url(./../img/card/card-ellipse.svg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -42,9 +44,9 @@ span{
     justify-content: space-between;
     align-items: center;
 }
-.card__wrapper{
+.card__grade{
     display: flex;
-    gap: 12px;
+    gap: 25px;
 }
 .card__btn {
     display: flex;
@@ -64,6 +66,25 @@ span{
     flex-shrink: 0;
     color: var(--card-text);
     &:hover{
+        transition: 0.5s ease-in-out;
         background: var(--button-bg);
+        color: #fff;
+    }
+}
+.fa-solid{
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.38);
+    &.fa-solid:hover{
+        color: red;
+        transition: 0.2s ease-in;
+    }
+}
+.fa-folder-plus{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.38);
+    &.fa-folder-plus:hover{
+        opacity: 0.8;
+        color: #ffff;
+        transition: 0.2s ease-in;
     }
 }

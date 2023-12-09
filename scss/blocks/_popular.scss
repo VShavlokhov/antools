@@ -27,5 +27,22 @@
     grid-template-columns: repeat(auto-fill,358px);
     column-gap: 25px;
     row-gap: 100px;
-    
+}
+
+.popular__button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 17px 38px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #1E252B;
+    color: var(--color-text);
+    font-size: 20px;
+    &:hover{
+        color: var(--accent);
+        transition: 0.5s ease-in;
+        box-shadow: 0px 4px 4px 0px var(--accent)
+    }
 }

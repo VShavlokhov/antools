@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Antools</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -14,179 +17,238 @@
                     <a href="#!" class="logo"><img src="./img/logo.png" alt=""></a>
                 </div>
                 <ul class="nav-list">
-                    <li class="nav-list__item">
-                        <a href="#!" class="nav-list__link">Home</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#!" class="nav-list__link">Categories</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#!" class="nav-list__link">My Collections</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#!" class="nav-list__link">Blog</a>
-                    </li>
+                    <li class="nav-list__item"><a href="#!" class="nav-list__link">Home</a></li>
+                    <li class="nav-list__item"><a href="#!" class="nav-list__link">Categories</a></li>
+                    <li class="nav-list__item"><a href="#!" class="nav-list__link">My Collections</a></li>
+                    <li class="nav-list__item"><a href="#!" class="nav-list__link">Blog</a></li>
                 </ul>
                 <div class="nav__personal">
                     <a href="#!" class="nav__login">Login</a>
                     <button class="nav_button">Sign Up</button>
-                </div>  
+                </div>
             </nav>
-            <div class="header-content">
-                <div class="header__text">
-                <h1 class="header__title">Awesome tools for Designer & Developer<span>.</span></h1>
-                <p class="header__desc">Antool is a web collection of information on paid or free Design and Development tools </p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__content">
+                <h1 class="main__title"> Awesome tools forDesigner & Developer<span>.</span></h1>
+                <p class="main__desc">
+                    Antool is a web collection of information on paid or free Design and Development tools
+                </p>
                 <form action="#!" class="search">
-                    <img src="./img/icon/search.svg" alt="" class="search__icon">
+                    <img src="./img/icon/search.svg" alt="">
                     <input placeholder="find more than 430+ tools..." type="text" class="search__input">
-
                     <button class="search__button">Search</button>
                 </form>
-                <div class="header__social">
-                    <img src="./img/icon/social-fb.svg" alt="">
-                    <img src="./img/icon/social-in.svg" alt="">
-                    <img src="./img/icon/social-tv.svg" alt="">
+                <div class="main__social">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
                 </div>
+
             </div>
         </div>
-    </div>
-    </header>
+        <div class="main__bg">
+            <img src="./img/headebg.svg" alt="" class="main__img">
+        </div>
+    </main>
     <section class="popular">
         <div class="container">
             <div class="popular__text">
                 <h2 class="popular__title">Most Popular Tools</h2>
-                <p class="popular__desc">Tools for the best Designers and Developers most popularly used in the world</p>
+                <p class="popular__desc">Tools for the best Designers and Developers most popularly used in the world
+                </p>
             </div>
             <div class="popular-wrapper">
-
-            
-            <div  class="card popular__card">
-                <div class="card__name">
-                    <img src="./img/card/card-figma.svg" alt="" class="card__img">
-                    <p class="card__title">FIGMA <span>Free</span></p>
-                </div>
-                <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="card__footer">
-                    
-                    <div class="card__wrapper">
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon2.svg" alt="">
-                        </button>
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon1.svg" alt="">
-                        </button>
-                        
+                <div class="card popular__card">
+                    <div class="card__name">
+                        <img src="./img/card/card-figma.svg" alt="" class="card__img">
+                        <p class="card__title">FIGMA <span>Free</span></p>
                     </div>
-                    <button class="card__btns">Visit</button>
+                    <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card__footer">
+                        <div class="card__grade">
+                            <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                            <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                        </div>
+                        <button class="card__btns">Visit</button>
+                    </div>
+                </div>
+                <div class="card popular__card">
+                    <div class="card__name">
+                        <img src="./img/card/card-sketch.svg" alt="" class="card__img">
+                        <p class="card__title">Sketch <span>Trial & Paid</span></p>
+                    </div>
+                    <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card__footer">
+                        <div class="card__wrapper">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                        </div>
+                        <button class="card__btns">Visit</button>
+                    </div>
+                </div>
+                <div class="card popular__card">
+                    <div class="card__name">
+                        <img src="./img/card/card-visual-studio-code.svg" alt="" class="card__img">
+                        <p class="card__title">Visual Studio<span>Free</span></p>
+                    </div>
+                    <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card__footer">
+                        <div class="card__wrapper">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                        </div>
+                        <button class="card__btns">Visit</button>
+                    </div>
+                </div>
+                <div class="card popular__card">
+                    <div class="card__name">
+                        <img src="./img/card/card-notion.svg" alt="" class="card__img">
+                        <p class="card__title">Notion<span>Free & Paid</span></p>
+                    </div>
+                    <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card__footer">
+                        <div class="card__wrapper">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                        </div>
+                        <button class="card__btns">Visit</button>
+                    </div>
+                </div>
+                <div class="card popular__card">
+                    <div class="card__name">
+                        <img src="./img/card/card-slack.svg" alt="" class="card__img">
+                        <p class="card__title">Slack<span>Free & Paid</span></p>
+                    </div>
+                    <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card__footer">
+                        <div class="card__wrapper">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                        </div>
+                        <button class="card__btns">Visit</button>
+                    </div>
+                </div>
+                <div class="card popular__card">
+                    <div class="card__name">
+                        <img src="./img/card/card-invision.svg" alt="" class="card__img">
+                        <p class="card__title">Invision<span>Free & Paid</span></p>
+                    </div>
+                    <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card__footer">
+                        <div class="card__wrapper">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                        </div>
+                        <button class="card__btns">Visit</button>
+                    </div>
                 </div>
             </div>
-            
-            <div  class="card popular__card">
-                <div class="card__name">
-                    <img src="./img/card/card-sketch.svg" alt="" class="card__img">
-                    <p class="card__title">Sketch <span>Trial & Paid</span></p>
-                </div>
-                <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="card__footer">
-                    
-                    <div class="card__wrapper">
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon2.svg" alt="">
-                        </button>
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon1.svg" alt="">
-                        </button>
-                        
-                    </div>
-                    <button class="card__btns">Visit</button>
-                </div>
-            </div>
-            
-            <div  class="card popular__card">
-                <div class="card__name">
-                    <img src="./img/card/card-visual-studio-code.svg" alt="" class="card__img">
-                    <p class="card__title">Visual Studio<span>Free</span></p>
-                </div>
-                <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="card__footer">
-                    
-                    <div class="card__wrapper">
-                        <button class="card__btn ">
-                            <img src="./img/card/card-icon2.svg" alt="">
-                        </button>
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon1.svg" alt="">
-                        </button>
-                        
-                    </div>
-                    <button class="card__btns">Visit</button>
-                </div>
-            </div>
-            
-            <div  class="card popular__card">
-                <div class="card__name">
-                    <img src="./img/card/card-notion.svg" alt="" class="card__img">
-                    <p class="card__title">Notion<span>Free & Paid</span></p>
-                </div>
-                <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="card__footer">
-                    
-                    <div class="card__wrapper">
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon2.svg" alt="">
-                        </button>
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon1.svg" alt="">
-                        </button>
-                        
-                    </div>
-                    <button class="card__btns">Visit</button>
-                </div>
-            </div>
-            
-            <div  class="card popular__card">
-                <div class="card__name">
-                    <img src="./img/card/card-slack.svg" alt="" class="card__img">
-                    <p class="card__title">Slack<span>Free & Paid</span></p>
-                </div>
-                <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="card__footer">
-                    
-                    <div class="card__wrapper">
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon2.svg" alt="">
-                        </button>
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon1.svg" alt="">
-                        </button>
-                        
-                    </div>
-                    <button class="card__btns">Visit</button>
-                </div>
-            </div>
-            
-            <div  class="card popular__card">
-                <div class="card__name">
-                    <img src="./img/card/card-invision.svg" alt="" class="card__img">
-                    <p class="card__title">Invision<span>Free & Paid</span></p>
-                </div>
-                <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="card__footer">
-                    
-                    <div class="card__wrapper">
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon2.svg" alt="">
-                        </button>
-                        <button class="card__btn">
-                            <img src="./img/card/card-icon1.svg" alt="">
-                        </button>
-                        
-                    </div>
-                    <button class="card__btns">Visit</button>
+            <button class="popular__button">Load more</button>
+    </section>
+    <section class="brand">
+        <div class="container--brand">
+            <div class="brand__content">
+                <h2 class="brand__title">Trusted more than 150+ brand</h2>
+                <div class="brand__wrapper">
+                    <a href="#!" class="brand__logo"> <img src="./img/brand/microsoft.svg" alt=""></a>
+                    <a href="#!" class="brand__logo"> <img src="./img/brand/google.svg" alt=""></a>
+                    <a href="#!" class="brand__logo"> <img src="./img/brand/slack.svg" alt=""></a>
+                    <a href="#!" class="brand__logo"> <img src="./img/brand/wordpress.svg" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="new">
+        <div class="container">
+            <div class="new__content">
+                <div class="new__left">
+                    <h1 class="new__title">Newcomer Tools</h1>
+                    <p class="new__desc">Wow! see the latest update of the most recommended tools from reliable
+                        designers and developers</p>
+                    <button class="new__buttoon">Explore more</button>
+                </div>
+                <div class="new-right">
+                    <div class="card new-card">
+                        <div class="card__name">
+                            <img src="./img/brand/new-card/zeplin.svg" alt="" class="card__img">
+                            <p class="card__title">Zeplin <span>Free & Paid</span></p>
+                        </div>
+                        <p class="card_desc new-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="card__footer">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                            <button class="card__btns">Visit</button>
+                        </div>
+                    </div>
+                    <div class="card new__card">
+                        <div class="card__name">
+                            <img src="./img/brand/new-card/jb_phpstorm.svg" alt="" class="card__img">
+                            <p class="card__title">PHPStorm<span>Free</span></p>
+                        </div>
+                        <p class="card_desc new-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="card__footer">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                            <button class="card__btns">Visit</button>
+                        </div>
+                    </div>
+                    <div class="card new__card">
+                        <div class="card__name">
+                            <img src="./img/brand/new-card/jb_toolbox_app.svg" alt="" class="card__img">
+                            <p class="card__title">Toolbox<span>Free</span></p>
+                        </div>
+                        <p class="card_desc new-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="card__footer">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                            <button class="card__btns">Visit</button>
+                        </div>
+                    </div>
+                    <div class="card new__card">
+                        <div class="card__name">
+                            <img src="./img/brand/new-card/procreate.svg" alt="" class="card__img">
+                            <p class="card__title">Procreate<span>Paid</span></p>
+                        </div>
+                        <p class="card_desc new-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="card__footer">
+                            <div class="card__grade">
+                                <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#!"><i class="fa-solid fa-folder-plus"></i></a>
+                            </div>
+                            <button class="card__btns">Visit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial">
+    </section>
+    <script src="https://kit.fontawesome.com/9600f6299b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
 
