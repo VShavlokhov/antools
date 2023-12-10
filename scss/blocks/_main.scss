@@ -22,35 +22,12 @@ span{
    font-size: 18px;
    line-height: 30px; /* 166.667% */
 }
-.search {
-    display: flex;
-    gap: 13px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 121px;
-    max-width: 498px;
-    height: 64px;
-    padding: 22px 11px 22px 18px;
-    border-radius: 15px;
-    border: 1.5px solid rgba(255, 255, 255, 0.10);
-    background: #283036;
+
+.main__search{
+
+   margin-bottom: 121px;
 }
-.search__input {
-    flex-grow: 1;
-    color: rgba(255, 255, 255, 0.38);
-    font-size: 14px;
-}
-.search__button {
-    width: 130.435px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: var(--button-bg);
-    color: var(--button-color);
-    &.search__button:hover{
-      opacity: 0.8;
-    }
-}
+
 .header__social{
     display: flex;
     gap: 30px;
@@ -93,4 +70,8 @@ span{
 }
 .fa-twitter{
    font-size: 36px;
+}
+
+.main__search{
+   max-width: 498px;
 }
